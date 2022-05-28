@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large; 
+}
+
+main{
+    display: flex;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+}
+
+.left{
+    padding: 20px;
+    text-align: center;
+}
+
+.right{
+    padding: 20px;
+    text-align: center;
+}
+
+.center{
+    margin: auto;
+    padding: 20px; 
+}
+
+#game{
+    width: 1200px;
+    height: 700px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+    top: 0;
+    background-image: url("title.png"), url(background2.gif);
+}
+#block{
+    width: 50px;
+    height: 700px;
+    /* opacity: 0; */
+    position: relative;
+    left: 1010px;
+    animation: block 2s infinite linear;
+}
+#fish{
+    width: 200px;
+    height: 300px;
+    background-image: url(fish1.gif);
+    position: relative;
+    background-repeat: no-repeat;
+    left: 1010px;
+    top: -400px;
+    animation: block 2s infinite linear;
+    opacity: 1;
+}
+@keyframes block{
+    0%{left:1010px}
+    100%{left:-50px}
+}
+#shark{
+    width: 250px;
+    height: 180px;
+    background-image: url(shark.gif);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 100px;
+    left: 359px
+}
